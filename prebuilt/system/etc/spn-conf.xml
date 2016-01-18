@@ -1,0 +1,35 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!-- DTS2013111406082 z00216187 20131214 Deleted-->
+<!--
+/**
+ * Copyright (c) 2013, Qualcomm Technologies, Inc.
+ * All Rights Reserved.
+ * Qualcomm Technologies Proprietary and Confidential.
+ */
+-->
+<!--<spnOverrides>-->
+    <!-- China -->
+    <!-- DTS2013101207690 z00216187 2013/10/15 begin -->
+    <!--<spnOverride numeric="46000" spn="China Mobile" />
+    <spnOverride numeric="46001" spn="China Unicom" />
+    <spnOverride numeric="46002" spn="China Mobile" />-->
+    <!-- DTS2013101207690 z00216187 2013/10/15 end -->
+    <!--<spnOverride numeric="46003" spn="China Telecom" />
+    <spnOverride numeric="46005" spn="China Telecom" />
+    <spnOverride numeric="46006" spn="China Unicom" />
+    <spnOverride numeric="46007" spn="China Mobile" />-->
+    <!-- Taiwan -->
+    <!--<spnOverride numeric="46601" spn="FarEasTone" />
+    <spnOverride numeric="46605" spn="APBW" />
+    <spnOverride numeric="46606" spn="Tuntex" />
+    <spnOverride numeric="46688" spn="KG Telecom" />
+    <spnOverride numeric="46689" spn="VIBO" />
+    <spnOverride numeric="46692" spn="Chungwa" />
+    <spnOverride numeric="46693" spn="MobiTai" />
+    <spnOverride numeric="46697" spn="Taiwan Mobile" />
+<<<<<<< HEAD
+    <spnOverride numeric="46699" spn="TransAsia" />-->
+    <!--Hong Kong -->
+    <!--<spnOverride numeric="45429" spn="PCCW" />-->
+<!--</spnOverrides>-->
+    <!--Hong Kong -->
