@@ -14,6 +14,7 @@
 # limitations under the License.
 #
 
+TARGET_OTA_ASSERT_DEVICE := hwG6-U10,G6-U10,msm8610
 TARGET_BOOTLOADER_BOARD_NAME := msm8610
 
 LOCAL_PATH := device/huawei/msm8610
