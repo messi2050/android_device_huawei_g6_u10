@@ -21,20 +21,16 @@ $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/huawei/msm8610/full_msm8610.mk)
+$(call inherit-product, device/huawei/g6_u10/device.mk)
 
 # Correct boot animation size for the screen
 TARGET_SCREEN_HEIGHT := 960
 TARGET_SCREEN_WIDTH := 540
 
 # Device name
-PRODUCT_DEVICE := msm8610
-PRODUCT_NAME := cm_msm8610
-PRODUCT_BRAND := huawei
-PRODUCT_MODEL := msm8610
+PRODUCT_DEVICE := g6_u10
+PRODUCT_NAME := cm_g6_u10
+PRODUCT_BRAND := HUAWEI
+PRODUCT_MODEL := HUAWEI G6-U10
 PRODUCT_MANUFACTURER := huawei
-PRODUCT_RELEASE_NAME := msm8610
 
-# CM packages
-PRODUCT_PACKAGES += \
-    Torch

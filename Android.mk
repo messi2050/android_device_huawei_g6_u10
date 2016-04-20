@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),msm8610)
+ifeq ($(TARGET_DEVICE),g6_u10)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

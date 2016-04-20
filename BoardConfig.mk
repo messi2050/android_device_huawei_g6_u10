@@ -17,7 +17,7 @@
 TARGET_OTA_ASSERT_DEVICE := hwG6-U10,G6-U10,msm8610
 TARGET_BOOTLOADER_BOARD_NAME := msm8610
 
-LOCAL_PATH := device/huawei/msm8610
+LOCAL_PATH := device/huawei/g6_u10
 
 # Platform
 TARGET_NO_BOOTLOADER := true
@@ -39,7 +39,7 @@ TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/huawei/msm8610
 TARGET_KERNEL_CONFIG := msm8610_defconfig
-BOARD_CUSTOM_BOOTIMG_MK := device/huawei/msm8610/mkbootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/huawei/g6_u10/mkbootimg.mk
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -57,7 +57,7 @@ AUDIO_FEATURE_DISABLED_DS1_DOLBY_DDP := true
 TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/huawei/msm8610/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/huawei/g6_u10/bluetooth
 
 # Build
 TARGET_SYSTEMIMAGE_USE_SQUISHER := true
