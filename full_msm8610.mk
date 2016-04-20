@@ -228,13 +228,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/recovery/init.recovery.qcom.rc:out/target/product/msm8610/root/init.recovery.qcom.rc
 
 # Set default USB interface
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp
+#PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+#    persist.sys.usb.config=mtp
 
 # Enable strict operation
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.strict_op_enable=false \
-    ro.secure=0
+#PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+#    persist.sys.strict_op_enable=false \
+#    ro.secure=0
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.model=G6-U10
