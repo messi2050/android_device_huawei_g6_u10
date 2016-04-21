@@ -21,9 +21,11 @@ LOCAL_PATH := device/huawei/g6_u10
 
 # Platform
 TARGET_NO_BOOTLOADER := true
+
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno302
 TARGET_BOARD_PLATFORM := msm8610
 TARGET_BOOTLOADER_BOARD_NAME := MSM8610
+
 TARGET_ARCH := arm
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
@@ -38,13 +40,14 @@ TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/huawei/msm8610
-TARGET_KERNEL_CONFIG := msm8610_defconfig
+TARGET_KERNEL_CONFIG := cm_g6_u10_defconfig
 BOARD_CUSTOM_BOOTIMG_MK := device/huawei/g6_u10/mkbootimg.mk
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01E00000
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 
 # Audio
 #TARGET_QCOM_AUDIO_VARIANT := caf
@@ -58,6 +61,9 @@ TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/huawei/g6_u10/bluetooth
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_QCOM := true
+BLUETOOTH_HCI_USE_MCT := true
 
 # Build
 TARGET_SYSTEMIMAGE_USE_SQUISHER := true
@@ -88,6 +94,9 @@ TARGET_INIT_VENDOR_LIB := libinit_msm
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
+
+# Memory
+#MALLOC_IMPL := dlmalloc
 
 # Media
 #TARGET_QCOM_MEDIA_VARIANT := caf
