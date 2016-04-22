@@ -241,8 +241,8 @@ PRODUCT_COPY_FILES += \
 	
 $(call inherit-product, build/target/product/full.mk)
 
-$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-hdpi-1024-dalvik-heap.mk)
 
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
+#PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 $(call inherit-product-if-exists, vendor/huawei/g6_u10/g6_u10-vendor.mk)
