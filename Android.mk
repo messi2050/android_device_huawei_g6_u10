@@ -16,7 +16,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),msm8610)
+ifeq ($(TARGET_DEVICE),g6_u10)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
@@ -143,8 +143,8 @@ $(shell mkdir -p $(TARGET_OUT)/etc/firmware/wlan/prima; \
 
 # Create symlink spn-conf.xml which points to selective-spn-conf.xml
 # since Huawei's modem does not pull in network operator names
-$(shell mkdir -p $(TARGET_OUT)/etc; \
-    ln -sf /system/etc/selective-spn-conf.xml \
-	   $(TARGET_OUT)/etc/spn-conf.xml)
+#$(shell mkdir -p $(TARGET_OUT)/etc; \
+#    ln -sf /system/etc/selective-spn-conf.xml \
+#	   $(TARGET_OUT)/etc/spn-conf.xml)
 	   
 endif
