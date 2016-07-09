@@ -102,9 +102,6 @@ qcom.hw.aac.encoder=true
 # Wifi
 ro.sys.umsdirtyratio=20
 
-# system prop for NFC DT
-ro.nfc.port=I2C
-
 #DASH video streaming
 #Set allowed avsync window during playback
 persist.dash.max.rep.resolution=1280*720
@@ -119,4 +116,4 @@ ro.config.hw_camera_mfd=true
 ro.config.hw_camera_davinci=true
 ro.config.hw_camera_zsl=true
 ro.config.hw_camera_zsl_default=true
-ro.config.hw_camera_face_detection=true
+#ro.config.hw_camera_face_detection=true

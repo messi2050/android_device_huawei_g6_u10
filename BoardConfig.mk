@@ -39,7 +39,7 @@ TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
 
 # Inline kernel building
 TARGET_KERNEL_SOURCE := kernel/huawei/msm8x1x
-TARGET_KERNEL_CONFIG := msm8610_defconfig
+TARGET_KERNEL_CONFIG := g6_u10_defconfig
 BOARD_CUSTOM_BOOTIMG_MK := device/huawei/g6_u10/mkbootimg.mk
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37
 BOARD_KERNEL_BASE := 0x00000000
@@ -74,7 +74,7 @@ TARGET_ARCH_LOWMEM := true
 # Graphics
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
-TARGET_QCOM_DISPLAY_VARIANT := caf-new
+#TARGET_QCOM_DISPLAY_VARIANT := caf-new
 TARGET_USES_ION := true
 BOARD_EGL_CFG := $(LOCAL_PATH)/prebuilt/system/lib/egl/egl.cfg
 USE_OPENGL_RENDERER := true
@@ -92,7 +92,7 @@ TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Media
-TARGET_QCOM_MEDIA_VARIANT := caf-new
+#TARGET_QCOM_MEDIA_VARIANT := caf-new
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 
 #Partition
